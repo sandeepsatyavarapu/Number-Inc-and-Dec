@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Increase and Decrease</title>
+    </head>
+    <body>
+        <center>
+            <div>
+                <img onclick="Dec()" style="width:50px;height: 50px;" src="Application Development.jpg">
+                <img onclick="Inc()"  style="width:50px;height: 50px;" src="Westlisoft.jpeg" >
+            </div>
+            <div>
+                <label>Score:</label>
+            </div>
+                <div id="score">0</div>
+        </center>
+        <script>
+            var score=0;
+            function Dec()
+            {
+                score=score-10;
+                document.getElementById("score").textContent=score;
+            }
+              function Inc()
+            {
+                score=score+10;
+                document.getElementById("score").textContent=score;
+            }
+        </script>
+    </body>
+</html>
